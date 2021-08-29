@@ -241,7 +241,7 @@ the user's home directory."
   :group 'dotfiles
   :lighter " dotcrafter"
   :keymap
-  (list (cons (dotcrafter--key "t") #'dotcrafter-tangle-org-file)
+  (list (cons (dotcrafter--key "t") #'dotcrafter-tangle-org-files)
         (cons (dotcrafter--key "u") #'dotcrafter-update-dotfiles))
   (if dotcrafter-mode
       (add-hook 'org-mode-hook #'dotcrafter--org-mode-hook)
